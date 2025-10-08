@@ -4,6 +4,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="practice2025.MainWindow"
+        x:CompileBindings="True"
         Title="practice2025">
-    Welcome to Avalonia!
+	<DockPanel>
+		<StackPanel HorizontalAlignment="Center" Orientation="Horizontal" DockPanel.Dock="Top">
+			<TextBlock Text="Добро пожаловать в больницу!"/>
+		</StackPanel>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="5">
+			<TextBlock Text="Введите логин" HorizontalAlignment="Center" Margin="5"/>
+			<TextBox  x:Name="LoginBox" Margin="5" Width="200"/>
+			<TextBlock Text="Введите пароль" HorizontalAlignment="Center" Margin="5"/>
+			<TextBox  x:Name="PasswordBox" Margin="5" Width="200" PasswordChar="*"/>
+			<TextBlock Text="" x:Name="ErrorBlock" HorizontalAlignment="Center" Margin="5"/>
+			<Button x:Name="ForPassword" Content="Показать пароль" Margin="5" Click="TogglePasswordVisibility" HorizontalAlignment="Center"/>
+			<Button x:Name="Authorize" Content="Авторизироваться" Margin="5" Click="AuthorizeButton" HorizontalAlignment="Center"/>
+		</StackPanel>
+
+	</DockPanel>
 </Window>

@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        x:Class="practice2025.AddClient"
+        x:CompileBindings="False"
+        Background="LightYellow"
+        Title="Добавить клиента">
+	<DockPanel>
+		<StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock Text="Добавить клиента" HorizontalAlignment="Center"/>
+		</StackPanel>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="5">
+			<TextBlock Text="Введите имя" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientNameBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите фамилию" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientSurnameBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите отчество" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientPatronymicBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите СНИЛС" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientSnilsBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите паспорт" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientPassportBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите дату рождения" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientBirthdayBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите полис" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="ClientPolisBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<Button Content="Добавить клиента" HorizontalAlignment="Center" Margin="5" Width="200" Click="AddClient_OnClick"/>
+			<Button Content="Назад" HorizontalAlignment="Center" Margin="5" Width="200" Click="BackOnUser"/>
+			<TextBlock Text="" x:Name="UserAdd" VerticalAlignment="Center" Margin="200,5,0,0" Width="200"/>
+			<TextBlock Text="" x:Name="UserNotAdd" VerticalAlignment="Center" Margin="200,5,0,0" Width="200"/>
+		</StackPanel>
+	</DockPanel>
+</Window>

@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="practice2025.UserWindow"
+        x:CompileBindings="True"
+        Title="Панель пользователя"
+        Width="600" Height="450"
+        MinWidth="500" MinHeight="400">
+
+	<Window.Styles>
+		<Style Selector="TextBlock">
+			<Setter Property="FontFamily" Value="Segoe UI"/>
+			<!-- Установка шрифта по умолчанию -->
+		</Style>
+	</Window.Styles>
+
+	<Grid Margin="20" RowDefinitions="Auto,*,Auto">
+
+		<Border Grid.Row="0" CornerRadius="5" Background="#F0F0F0" Padding="10">
+			<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+
+
+				<StackPanel VerticalAlignment="Center" Spacing="5">
+					<TextBlock FontSize="16" FontWeight="Bold">
+						<Run Text="Имя: "/>
+						<Run x:Name="NameTextBlock"/>
+					</TextBlock>
+					<TextBlock>
+						<Run Text="Роль: "/>
+						<Run x:Name="TypeTextBlock"/>
+					</TextBlock>
+				</StackPanel>
+			</StackPanel>
+		</Border>
+
+		<StackPanel Grid.Row="1" Spacing="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+			<Button x:Name="AddClientButton"
+                    Content="Добавить нового пациента"
+                    Click="OnAddClientClick"
+                    Width="250" Height="40"/>
+		</StackPanel>
+
+		<Border Grid.Row="2" BorderThickness="0,1,0,0" BorderBrush="LightGray" Padding="0,10,0,0">
+			<Button Content="Выйти" HorizontalAlignment="Right" Width="100" Click="OnLogoutClick"/>
+		</Border>
+	</Grid>
+</Window>
