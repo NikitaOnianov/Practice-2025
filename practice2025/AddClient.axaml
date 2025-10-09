@@ -10,7 +10,7 @@
         Background="LightYellow"
         Title="Добавить клиента">
 	<DockPanel>
-		<StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 			<TextBlock Text="Добавить клиента" HorizontalAlignment="Center"/>
 		</StackPanel>
 		<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="5">

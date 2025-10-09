@@ -2,6 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using practice2025.Models;
+using practice2025.Entry;
 
 namespace practice2025
 {

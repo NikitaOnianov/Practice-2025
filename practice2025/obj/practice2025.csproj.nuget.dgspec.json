@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\practice2025.csproj": {}
+    "C:\\Users\\VivoBook 15X\\Desktop\\Производственная практика 2025\\practice2025\\practice2025\\practice2025.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\practice2025.csproj": {
+    "C:\\Users\\VivoBook 15X\\Desktop\\Производственная практика 2025\\practice2025\\practice2025\\practice2025.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\practice2025.csproj",
+        "projectUniqueName": "C:\\Users\\VivoBook 15X\\Desktop\\Производственная практика 2025\\practice2025\\practice2025\\practice2025.csproj",
         "projectName": "practice2025",
-        "projectPath": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\practice2025.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\obj\\",
+        "projectPath": "C:\\Users\\VivoBook 15X\\Desktop\\Производственная практика 2025\\practice2025\\practice2025\\practice2025.csproj",
+        "packagesPath": "C:\\Users\\VivoBook 15X\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VivoBook 15X\\Desktop\\Производственная практика 2025\\practice2025\\practice2025\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VivoBook 15X\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -108,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

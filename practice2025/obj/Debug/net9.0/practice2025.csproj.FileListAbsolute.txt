@@ -326,3 +326,4 @@ C:\Users\User\Desktop\Practice-2025\practice2025\obj\Debug\net9.0\refint\Avaloni
 C:\Users\User\Desktop\Practice-2025\practice2025\obj\Debug\net9.0\practice.9C60682E.Up2Date
 C:\Users\User\Desktop\Practice-2025\practice2025\obj\Debug\net9.0\practice2025.genruntimeconfig.cache
 C:\Users\User\Desktop\Practice-2025\practice2025\obj\Debug\net9.0\ref\practice2025.dll
+C:\Users\VivoBook 15X\Desktop\Производственная практика 2025\practice2025\practice2025\obj\Debug\net9.0\practice2025.sourcelink.json

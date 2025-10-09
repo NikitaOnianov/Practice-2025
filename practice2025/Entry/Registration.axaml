@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="practice2025.Entry.Registration"
+        Title="Регистрация"
+		xmlns:vm="using:practice2025.Models"
+        Icon="avares://practice2025/Assets/logo.png">
+ <DockPanel>
+		<ScrollViewer>
+			<StackPanel Spacing="15" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+				<TextBox Width="300"  x:Name="Name" Watermark="Введите ФИО"/>
+
+				<TextBox Width="300" x:Name="Login" Watermark="Введите Логин"/>
+
+				<TextBox Width="300"  x:Name="Password" Watermark="Введите Пароль"/>
+
+				<StackPanel>
+					<TextBlock Text="Должности"/>
+					<ComboBox Name="ListPosition">
+						<ComboBox.ItemTemplate>
+							<DataTemplate x:DataType="vm:UsersType">
+								<TextBlock Text="{Binding UserTypeName}"/>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+
+				<Button Content="Зарегистрироваться" Click="reg"/>
+
+				<Button Content="Авторизация" Click="auth"/>
+
+				<TextBlock x:Name="Mess" Foreground="Red"/>
+
+			</StackPanel>
+		</ScrollViewer>
+	</DockPanel>
+</Window>
