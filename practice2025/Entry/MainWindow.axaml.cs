@@ -3,6 +3,7 @@ using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
+using practice2025.Cabinets;
 using practice2025.Models;
 using Tmds.DBus.Protocol;
 
@@ -34,16 +35,30 @@ public partial class MainWindow : Window
 
         if (user != null)
         {
-            var functionWindow = new UserWindow(user);
+            if (user.UserType == 1)
             {
-                DataContext = user;
-            };
-            functionWindow.ShowDialog(this);
-            Close();
+                new UserWindow(user).Show();
+                Close();
+            }
+            else if (user.UserType == 2)
+            {
+                new Administrator(user).Show();
+                Close();
+            }
+            else if (user.UserType == 3)
+            {
+                new Chief_Medical_Officer(user).Show();
+                Close();
+            }
+            else
+            {
+                new Dockor(user).Show();
+                Close();
+            }
         }
         else
         {
-            ErrorBlock.Text = "Неверный пароль";
+            ErrorBlock.Text = "Пользователь не найден";
         }
     }
 }

@@ -23,8 +23,16 @@ public partial class Registration : Window
         }
         else
         {
-            type = new ObservableCollection<UsersType>(db.UsersTypes.ToList());
+            type = new ObservableCollection<UsersType>(db.UsersTypes);
         }
+        ObservableCollection<User>? users2 = new ObservableCollection<User>(
+            db.Users.Where(it => it.UserType == 3)
+            );
+        if (users2.Count !=0)
+        {
+            type = new ObservableCollection<UsersType>(type.Where(it => it.UserTypeId != 3));
+        }
+
         ListPosition.ItemsSource = type; // получаем итоговый список должностей
         ListPosition.SelectedIndex = 0;
     }

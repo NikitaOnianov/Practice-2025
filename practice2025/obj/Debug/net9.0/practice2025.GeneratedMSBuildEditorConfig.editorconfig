@@ -29,10 +29,19 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/AddClient.axaml]
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/App.axaml]
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Cabinets/Administrator.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Cabinets/Chief_Medical_Officer.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Cabinets/Dockor.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Cabinets/UserWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Entry/MainWindow.axaml]
@@ -41,5 +50,5 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Entry/Registration.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/UserWindow.axaml]
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Functions/AddClient.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

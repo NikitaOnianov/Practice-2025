@@ -3,6 +3,7 @@ using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using practice2025.Models;
+using practice2025.Cabinets;
 
 namespace practice2025;
 

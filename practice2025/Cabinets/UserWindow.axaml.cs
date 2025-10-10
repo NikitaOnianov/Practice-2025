@@ -3,13 +3,14 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using practice2025.Models;
 using practice2025.Entry;
+using System.Linq;
 
-namespace practice2025
+namespace practice2025.Cabinets
 {
     public partial class UserWindow : Window
     {
-        private readonly User _user;
-
+        private readonly User User;
+        static MydatabaseContext db = new MydatabaseContext();
         public UserWindow()
         {
             InitializeComponent();
@@ -17,16 +18,16 @@ namespace practice2025
 
         public UserWindow(User user) : this()
         {
-            _user = user;
+            User = user;
             InitializeUserData();
         }
 
         private void InitializeUserData()
         {
-            NameTextBlock.Text = _user.UserName;
-            TypeTextBlock.Text = _user.UserType == 2 ? "Администратор" : "Оператор ЭВМ";
+            NameTextBlock.Text = User.UserName;
+            TypeTextBlock.Text = ((db.UsersTypes.Where(it => it.UserTypeId == User.UserType).First()) as UsersType).UserTypeName;
 
-            AddClientButton.IsVisible = _user.UserType == 2; // Кнопка добавления клиента доступна только для администраторов
+            AddClientButton.IsVisible = User.UserType == 2; // Кнопка добавления клиента доступна только для администраторов
         }
 
 

@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="practice2025.Cabinets.Administrator"
+        Title="Администратор"
+		Icon="avares://practice2025/Assets/logo.png">
+	<StackPanel HorizontalAlignment="Center" Spacing="15">
+		<Border CornerRadius="25" Background="Red" Padding="10" Width="600">
+			<StackPanel >
+				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+					<TextBlock Text="Ваше имя"/>
+					<TextBlock Name="Username"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+					<TextBlock Text="Ваша должность"/>
+					<TextBlock Name="Usertype"/>
+				</StackPanel>
+			</StackPanel>
+		</Border>
+		<StackPanel HorizontalAlignment="Center">
+			<Button Content="Добавить пациента" Click="addClient" Background="Green"/>
+			<Button Content="Выйти" Width="100" Click="Exit" Background="Yellow"/>
+			<Button Content="Передать должность" Click="heir" Background="Yellow"/>
+			<Button Content="Удалить пациента" Click="DelClient" Background="Red"/>
+			<Button Content="Удалить сотрудника" Click="DelUser" Background="Red"/>
+		</StackPanel>
+		
+
+		
+	</StackPanel>
+</Window>

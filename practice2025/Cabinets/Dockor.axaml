@@ -1,0 +1,82 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="500"
+        x:Class="practice2025.Cabinets.Dockor"
+        Title="Врач"
+		Icon="avares://practice2025/Assets/logo.png"
+		xmlns:vm="using:practice2025.Models">
+	<StackPanel HorizontalAlignment="Center" Spacing="15">
+		<ScrollViewer>
+		<StackPanel>
+		<Border CornerRadius="25" Background="Red" Padding="10" Width="300">
+			<StackPanel >
+				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+					<TextBlock Text="Ваше имя"/>
+					<TextBlock Name="Username"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+					<TextBlock Text="Ваша должность"/>
+					<TextBlock Name="Usertype"/>
+				</StackPanel>
+			</StackPanel>
+		</Border>
+
+		<Border
+				Background="Red"
+				CornerRadius="10"
+				Padding="20"
+				Margin="20"
+				Width="700"
+				Height="300">
+			<StackPanel Width="650" HorizontalAlignment="Center">
+				
+			<ListBox Name="ListClients">
+				<ListBox.ItemTemplate>
+					<DataTemplate x:DataType="vm:patient_turnoutDTO">
+						<StackPanel Orientation="Horizontal">
+							<StackPanel Orientation="Horizontal">
+								<StackPanel>
+									<TextBlock Text="ФИО"/>
+									<TextBlock Text="{Binding Client}"/>
+								</StackPanel>
+								<TextBlock Text=" "/>
+								<StackPanel>
+									<TextBlock Text="Дата"/>
+									<TextBlock Text="{Binding HistoryDate}"/>
+								</StackPanel>
+								<TextBlock Text=" "/>
+								<StackPanel>
+									<TextBlock Text="Время"/>
+									<TextBlock Text="{Binding HistoryTime}"/>
+								</StackPanel>
+								<TextBlock Text=" "/>
+								<StackPanel>
+									<TextBlock Text="Диагноз"/>
+									<TextBlock Text="{Binding Diagnosis}"/>
+								</StackPanel>
+								<TextBlock Text=" "/>
+								<CheckBox
+									 Content="Обслуживание "
+										Margin="20,0,0,0"
+										VerticalAlignment="Center"
+										IsChecked="{Binding IsPresent, Mode=TwoWay}"/>
+							</StackPanel>
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			</StackPanel>
+		</Border>
+		
+		<StackPanel HorizontalAlignment="Center">
+			<Button Content="Обновить" Click="update" Background="Orange" Width="200"/>
+			<Button Content="Сохранить изменения" Click="SaveChage" Background="Green" Width="200"/>
+			<Button Content="Выйти"  Click="Exit" Background="Yellow" Width="200"/>
+		</StackPanel>
+		<TextBlock Name="Mes"/>
+		</StackPanel>
+		</ScrollViewer>
+	</StackPanel>
+</Window>
