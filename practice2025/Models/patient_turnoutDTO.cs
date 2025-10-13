@@ -21,13 +21,13 @@ namespace practice2025.Models
         public string Diagnosis { get; set; }
 
         // Оригинальное свойство из базы данных
-        public bool? DrivingTrainingPresence { get; set; }
+        public bool? Presence { get; set; }
 
         // Свойство для привязки к CheckBox
         public bool IsPresent
         {
-            get => DrivingTrainingPresence ?? false;
-            set => DrivingTrainingPresence = value;
+            get => Presence ?? false;
+            set => Presence = value;
         }
     }
 }

@@ -10,8 +10,8 @@
 	<StackPanel HorizontalAlignment="Center" Spacing="15">
 		<ScrollViewer>
 		<StackPanel>
-		<Border CornerRadius="25" Background="Red" Padding="10" Width="300">
-			<StackPanel >
+		<Border CornerRadius="25" Background="Red" Padding="10" Width="600">
+			<StackPanel>
 				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
 					<TextBlock Text="Ваше имя"/>
 					<TextBlock Name="Username"/>
@@ -22,60 +22,65 @@
 				</StackPanel>
 			</StackPanel>
 		</Border>
-
+			<TextBlock Name="Mes" HorizontalAlignment="Center"/>
 		<Border
 				Background="Red"
 				CornerRadius="10"
 				Padding="20"
 				Margin="20"
-				Width="700"
+				Width="900"
 				Height="300">
-			<StackPanel Width="650" HorizontalAlignment="Center">
+			
 				
 			<ListBox Name="ListClients">
 				<ListBox.ItemTemplate>
 					<DataTemplate x:DataType="vm:patient_turnoutDTO">
-						<StackPanel Orientation="Horizontal">
+						<StackPanel>
+							<ScrollViewer>
+
 							<StackPanel Orientation="Horizontal">
-								<StackPanel>
-									<TextBlock Text="ФИО"/>
-									<TextBlock Text="{Binding Client}"/>
-								</StackPanel>
-								<TextBlock Text=" "/>
-								<StackPanel>
+
+								<StackPanel Width="100">
 									<TextBlock Text="Дата"/>
 									<TextBlock Text="{Binding HistoryDate}"/>
 								</StackPanel>
 								<TextBlock Text=" "/>
-								<StackPanel>
+								<StackPanel  Width="100">
 									<TextBlock Text="Время"/>
 									<TextBlock Text="{Binding HistoryTime}"/>
 								</StackPanel>
 								<TextBlock Text=" "/>
-								<StackPanel>
+								<StackPanel Width="300">
+									<TextBlock Text="ФИО"/>
+									<TextBlock Text="{Binding Client}" TextWrapping="Wrap"/>
+								</StackPanel>
+								<TextBlock Text=" "/>
+								
+								<StackPanel Width="200">
 									<TextBlock Text="Диагноз"/>
-									<TextBlock Text="{Binding Diagnosis}"/>
+									<TextBlock Text="{Binding Diagnosis}" TextWrapping="Wrap"/>
 								</StackPanel>
 								<TextBlock Text=" "/>
 								<CheckBox
-									 Content="Обслуживание "
 										Margin="20,0,0,0"
 										VerticalAlignment="Center"
 										IsChecked="{Binding IsPresent, Mode=TwoWay}"/>
 							</StackPanel>
+
+							</ScrollViewer>
 						</StackPanel>
 					</DataTemplate>
 				</ListBox.ItemTemplate>
 			</ListBox>
-			</StackPanel>
+
 		</Border>
 		
 		<StackPanel HorizontalAlignment="Center">
-			<Button Content="Обновить" Click="update" Background="Orange" Width="200"/>
 			<Button Content="Сохранить изменения" Click="SaveChage" Background="Green" Width="200"/>
-			<Button Content="Выйти"  Click="Exit" Background="Yellow" Width="200"/>
+			<Button Content="Обновить" Click="update" Background="Orange" Width="200"/>
+			<Button Content="Выйти"  Click="Exit" Background="YellowGreen" Width="200"/>
 		</StackPanel>
-		<TextBlock Name="Mes"/>
+		
 		</StackPanel>
 		</ScrollViewer>
 	</StackPanel>
