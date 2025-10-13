@@ -8,15 +8,15 @@ using System.Linq;
 
 namespace practice2025.Cabinets;
 
-public partial class Dockor : Window
+public partial class Doctor : Window
 {
     User User { get; set; }
     static MydatabaseContext db = new MydatabaseContext();
-    public Dockor()
+    public Doctor()
     {
         InitializeComponent();
     }
-    public Dockor(User user)
+    public Doctor(User user)
     {
         InitializeComponent();
         this.User = user;

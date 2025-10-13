@@ -3,34 +3,47 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        d:DesignWidth="600"
+        d:DesignWidth="400"
         d:DesignHeight="450"
         x:Class="practice2025.AddClient"
         x:CompileBindings="False"
-        Background="LightYellow"
-        Title="Добавить клиента">
+        Title="Добавить клиента"
+		Icon="avares://practice2025/Assets/logo.png">
 	<DockPanel>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+		<ScrollViewer>
+		<StackPanel VerticalAlignment="Center" Margin="5" HorizontalAlignment="Center">
 			<TextBlock Text="Добавить клиента" HorizontalAlignment="Center"/>
-		</StackPanel>
-		<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="5">
+			
 			<TextBox x:Name="ClientNameBox" Watermark="Введите имя" VerticalAlignment="Center" Margin="5" Width="200"/>
 			
 			<TextBox x:Name="ClientSurnameBox" Watermark="Введите фамилию" VerticalAlignment="Center" Margin="5" Width="200"/>
 			
 			<TextBox x:Name="ClientPatronymicBox" Watermark="Введите отчество" VerticalAlignment="Center" Margin="5" Width="200"/>
+
+			<StackPanel>
+				<TextBlock Text="Дата рождения" HorizontalAlignment="Center"/>
+				<DatePicker Name="ClientBirthday" HorizontalAlignment="Center"/>
+			</StackPanel>
+
+			<!-- Выбор пола -->
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBlock Text="Пол: " VerticalAlignment="Center"/>
+				<ComboBox Name="GenderComboBox" Width="150" Margin="10,0,0,0"
+						SelectedIndex="0">
+					<ComboBoxItem>Мужской</ComboBoxItem>
+					<ComboBoxItem>Женский</ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
 			
 			<TextBox x:Name="ClientSnilsBox" Watermark="Введите СНИЛС" VerticalAlignment="Center" Margin="5" Width="200"/>
 			
 			<TextBox x:Name="ClientPassportBox" Watermark="Введите паспорт" VerticalAlignment="Center" Margin="5" Width="200"/>
-			
-			<TextBox x:Name="ClientBirthdayBox" Watermark="Введите дату рождения" VerticalAlignment="Center" Margin="5" Width="200"/>
-			
+
 			<TextBox x:Name="ClientPolisBox" Watermark="Введите полис" VerticalAlignment="Center" Margin="5" Width="200"/>
-			<Button Content="Добавить клиента" HorizontalAlignment="Center" Margin="5" Width="200" Click="AddClient_OnClick"/>
-			<Button Content="Назад" HorizontalAlignment="Center" Margin="5" Width="200" Click="BackOnUser"/>
-			<TextBlock Text="" x:Name="UserAdd" VerticalAlignment="Center" Margin="200,5,0,0" Width="200"/>
-			<TextBlock Text="" x:Name="UserNotAdd" VerticalAlignment="Center" Margin="200,5,0,0" Width="200"/>
+
+			<Button Content="Добавить" HorizontalAlignment="Center" Margin="5" Width="200" Click="AddClient_OnClick"/>
+			<TextBlock Text="" x:Name="mess" VerticalAlignment="Center" Margin="200,5,0,0" Width="200"/>
 		</StackPanel>
+		</ScrollViewer>
 	</DockPanel>
 </Window>

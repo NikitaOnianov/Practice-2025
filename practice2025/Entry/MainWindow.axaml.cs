@@ -35,25 +35,14 @@ public partial class MainWindow : Window
 
         if (user != null)
         {
-            if (user.UserType == 1)
+            int id = user.UserType;
+            switch (id)
             {
-                new UserWindow(user).Show();
-                Close();
-            }
-            else if (user.UserType == 2)
-            {
-                new Administrator(user).Show();
-                Close();
-            }
-            else if (user.UserType == 3)
-            {
-                new Chief_Medical_Officer(user).Show();
-                Close();
-            }
-            else
-            {
-                new Dockor(user).Show();
-                Close();
+                case 1: new Administrator(user).Show(); Close(this) ;break;
+                case 2 or 55: new Chief_Medical_Officer(user).Show(); Close(this); break;
+                case 62: new UserWindow(user).Show(); Close(this); break;
+                case int n when (n >= 35 && n <= 44): new Doctor(user).Show(); Close(this); break;
+                default: break;
             }
         }
         else

@@ -27,7 +27,6 @@ namespace practice2025.Cabinets
             NameTextBlock.Text = User.UserName;
             TypeTextBlock.Text = ((db.UsersTypes.Where(it => it.UserTypeId == User.UserType).First()) as UsersType).UserTypeName;
 
-            AddClientButton.IsVisible = User.UserType == 2; // Кнопка добавления клиента доступна только для администраторов
         }
 
 

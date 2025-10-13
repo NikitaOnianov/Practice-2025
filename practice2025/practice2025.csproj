@@ -37,4 +37,10 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Cabinets\Doctor.axaml.cs">
+      <DependentUpon>Doctor.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

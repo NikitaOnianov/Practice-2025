@@ -1,9 +1,10 @@
-﻿using System;
-using System.Linq;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
-using practice2025.Models;
+using Avalonia.Media;
 using practice2025.Cabinets;
+using practice2025.Models;
+using System;
+using System.Linq;
 
 namespace practice2025;
 
@@ -23,17 +24,27 @@ public partial class AddClient : Window
             string.IsNullOrWhiteSpace(ClientPatronymicBox.Text) ||
             string.IsNullOrWhiteSpace(ClientSnilsBox.Text) ||
             string.IsNullOrWhiteSpace(ClientPassportBox.Text) ||
-            string.IsNullOrWhiteSpace(ClientBirthdayBox.Text) ||
-            string.IsNullOrWhiteSpace(ClientPolisBox.Text))
+            ClientBirthday.SelectedDate == null ||
+            string.IsNullOrWhiteSpace(ClientPolisBox.Text) ||
+            GenderComboBox.SelectedItem == null)
         {
-            UserNotAdd.Text = "Пожалуйста, заполните все поля!";
+            mess.Foreground = Brushes.Red;
+            mess.Text = "Пожалуйста, заполните все поля!";
             return;
         }
 
         try
         {
             CorrectInput(); // Вызов проверки ввода
-
+            bool gender = true;
+            if (GenderComboBox.SelectedIndex == 0) // узнаём пол пользователя
+            {
+                gender = true;
+            }
+            else
+            {
+                gender = false;
+            }
             var NewClient = new Client
             {
                 ClientName = ClientNameBox.Text.Trim(),
@@ -41,19 +52,22 @@ public partial class AddClient : Window
                 ClientPatronymic = ClientPatronymicBox.Text.Trim(),
                 ClientSnils = ClientSnilsBox.Text.Trim(),
                 ClientPassport = ClientPassportBox.Text.Trim(),
-                ClientBirthday = DateOnly.Parse(ClientBirthdayBox.Text),
+                ClientBirthday = DateOnly.Parse(ClientBirthday.SelectedDate.Value.Date.ToString()),
                 ClientPolis = ClientPolisBox.Text.Trim(),
+                ClientIsMan = gender
             };
 
             context.Clients.Add(NewClient);
             context.SaveChanges();
 
-            UserAdd.Text = "Клиент успешно добавлен!";
+            mess.Foreground = Brushes.Green;
+            mess.Text = "Клиент успешно добавлен!";
             ClearFields();
         }
         catch (Exception ex)
         {
-            UserNotAdd.Text = $"Ошибка: {ex.Message} | StackTrace: {ex.StackTrace}";
+            mess.Foreground = Brushes.Red;
+            mess.Text = $"Ошибка: {ex.Message} | StackTrace: {ex.StackTrace}";
         }
     }
 
@@ -65,7 +79,6 @@ public partial class AddClient : Window
         ClientPatronymicBox.Text = "";
         ClientSnilsBox.Text = "";
         ClientPassportBox.Text = "";
-        ClientBirthdayBox.Text = "";
         ClientPolisBox.Text = "";
     }
 
@@ -76,16 +89,9 @@ public partial class AddClient : Window
         {
             throw new ArgumentException("Паспорт должен содержать ровно 10 цифр");
         }
-
-        if (!DateOnly.TryParse(ClientBirthdayBox.Text, out _))
+        if (ClientPolisBox.Text.Length != 16 || !ClientPolisBox.Text.All(char.IsDigit))
         {
-            throw new ArgumentException("Некорректный формат даты рождения");
+            throw new ArgumentException("Полюс должен содержать ровно 16 цифр");
         }
     }
-
-    private void BackOnUser(object? sender, RoutedEventArgs e)
-    {
-        new UserWindow().ShowDialog(this);
-    }
-
 }

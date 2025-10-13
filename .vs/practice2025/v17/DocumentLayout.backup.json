@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\cabinets\\dockor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\dockor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\functions\\addclient.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\functions\\addclient.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\cabinets\\dockor.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\dockor.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\functions\\addclient.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\functions\\addclient.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Dockor.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Dockor.axaml.cs",
-              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Dockor.axaml.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Dockor.axaml.cs",
-              "RelativeToolTip": "practice2025\\Cabinets\\Dockor.axaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Title": "AddClient.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Functions\\AddClient.axaml.cs",
+              "RelativeDocumentMoniker": "practice2025\\Functions\\AddClient.axaml.cs",
+              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Functions\\AddClient.axaml.cs",
+              "RelativeToolTip": "practice2025\\Functions\\AddClient.axaml.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T17:12:02.434Z",
+              "WhenOpened": "2025-10-13T13:22:08.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dockor.axaml",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Dockor.axaml",
-              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Dockor.axaml",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Dockor.axaml",
-              "RelativeToolTip": "practice2025\\Cabinets\\Dockor.axaml",
+              "Title": "AddClient.axaml",
+              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Functions\\AddClient.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Functions\\AddClient.axaml",
+              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Functions\\AddClient.axaml*",
+              "RelativeToolTip": "practice2025\\Functions\\AddClient.axaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-10T17:11:16.995Z",
+              "WhenOpened": "2025-10-13T13:00:32.129Z",
               "EditorCaption": ""
             }
           ]

@@ -32,7 +32,7 @@ public partial class Administrator : Window
 
     private void addClient(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-
+        new AddClient().Show();
     }
 
     private void DelClient(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
