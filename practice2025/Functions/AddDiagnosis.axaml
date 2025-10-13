@@ -1,0 +1,28 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="250"
+        x:Class="practice2025.Functions.AddDiagnosis"
+        xmlns:vm="using:practice2025.Models"
+        Title="Добавить диагноз"
+        Icon="avares://practice2025/Assets/logo.png">
+  <DockPanel>
+	  <StackPanel Margin="10" Spacing="10" HorizontalAlignment="Center">
+		  <StackPanel Orientation="Horizontal">
+			  <TextBlock Text="Введите название "/>
+              <TextBox Name="name"/>
+          </StackPanel>
+          <TextBlock Text="Выберите мед. отделение"/>
+          <ComboBox Name="ListMedicalDepartment" Width="300">
+			  <ComboBox.ItemTemplate>
+				  <DataTemplate DataType="vm:MedicalDepartment">
+					  <TextBlock Text="{Binding MedicalDepartmentName}"/>
+                  </DataTemplate>
+              </ComboBox.ItemTemplate>
+          </ComboBox>
+          <Button Content="Добавить диагноз" Click="Button_Click"/>
+          <TextBlock Name="mess"/>
+      </StackPanel>
+  </DockPanel>
+</Window>

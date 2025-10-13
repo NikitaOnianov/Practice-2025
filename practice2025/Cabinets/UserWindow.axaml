@@ -24,8 +24,8 @@
 						</TextBlock>
 					</StackPanel>
 				</Border>
-				<Button Content="Добавить пациента" Click="OnAddClientClick"/>
-				<Button Content="Выййти" Click="OnLogoutClick"/>
+				<Button Content="Добавить запись" Click="Button_Click"/>
+				<Button Content="Выйти" Click="OnLogoutClick"/>
 			</StackPanel>
 		</ScrollViewer>
 	</DockPanel>

@@ -30,24 +30,34 @@ public partial class MainWindow : Window
 
     private void AuthorizeButton(object? sender, RoutedEventArgs e)
     {
-        using var context = new MydatabaseContext();
-        var user = context.Users.FirstOrDefault(it => it.UserLogin == LoginTextBox.Text && it.UserPassword == PasswordTextBox.Text);
-
-        if (user != null)
+        try
         {
-            int id = user.UserType;
-            switch (id)
+            using (MydatabaseContext db = new MydatabaseContext())
             {
-                case 1: new Administrator(user).Show(); Close(this) ;break;
-                case 2 or 55: new Chief_Medical_Officer(user).Show(); Close(this); break;
-                case 62: new UserWindow(user).Show(); Close(this); break;
-                case int n when (n >= 35 && n <= 44): new Doctor(user).Show(); Close(this); break;
-                default: break;
+                User? user = db.Users.FirstOrDefault(it => it.UserLogin == LoginTextBox.Text && it.UserPassword == PasswordTextBox.Text);
+
+                if (user != null)
+                {
+                    int id = user.UserType;
+                    switch (id)
+                    {
+                        case 1: new Administrator(user).Show(); Close(this); break;
+                        case 2 or 55: new Chief_Medical_Officer(user).Show(); Close(this); break;
+                        case 62: new UserWindow(user).Show(); Close(this); break;
+                        case int n when (n >= 35 && n <= 44): new Doctor(user).Show(); Close(this); break;
+                        default: break;
+                    }
+                }
+                else
+                {
+                    ErrorBlock.Text = "Пользователь не найден";
+                }
             }
         }
-        else
+        catch (Exception ex)
         {
-            ErrorBlock.Text = "Пользователь не найден";
+            ErrorBlock.Text = "Ошибка" + ex.Message;
         }
+        
     }
 }

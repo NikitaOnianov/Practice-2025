@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using practice2025.Cabinets;
 using practice2025.Models;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -9,32 +10,34 @@ namespace practice2025.Entry;
 
 public partial class Registration : Window
 {
-    static MydatabaseContext db = new MydatabaseContext();
     public Registration()
     {
         InitializeComponent();
-        ObservableCollection<UsersType>? type = null;
-        ObservableCollection<User>? users = new ObservableCollection<User>(
-            db.Users.Where(it => it.UserType == 2)
-            );
-        if (users.Count != 0)
+        using (MydatabaseContext db = new MydatabaseContext())
         {
-            type = new ObservableCollection<UsersType>(db.UsersTypes.Where(it => it.UserTypeId != 2));
-        }
-        else
-        {
-            type = new ObservableCollection<UsersType>(db.UsersTypes);
-        }
-        ObservableCollection<User>? users2 = new ObservableCollection<User>(
-            db.Users.Where(it => it.UserType == 3)
-            );
-        if (users2.Count !=0)
-        {
-            type = new ObservableCollection<UsersType>(type.Where(it => it.UserTypeId != 3));
-        }
+            ObservableCollection<UsersType>? type = null;
+            ObservableCollection<User>? users = new ObservableCollection<User>(
+                db.Users.Where(it => it.UserType == 2)
+                );
+            if (users.Count != 0)
+            {
+                type = new ObservableCollection<UsersType>(db.UsersTypes.Where(it => it.UserTypeId != 2));
+            }
+            else
+            {
+                type = new ObservableCollection<UsersType>(db.UsersTypes);
+            }
+            ObservableCollection<User>? users2 = new ObservableCollection<User>(
+                db.Users.Where(it => it.UserType == 3)
+                );
+            if (users2.Count != 0)
+            {
+                type = new ObservableCollection<UsersType>(type.Where(it => it.UserTypeId != 3));
+            }
 
-        ListPosition.ItemsSource = type; // получаем итоговый список должностей
-        ListPosition.SelectedIndex = 0;
+            ListPosition.ItemsSource = type; // получаем итоговый список должностей
+            ListPosition.SelectedIndex = 0;
+        }
     }
 
     private void auth(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -52,24 +55,27 @@ public partial class Registration : Window
             string? password = Password.Text;
             int? i = (ListPosition.SelectedItem as UsersType).UserTypeId;
 
-            if (name != null && login != null && password != null)
+            using (MydatabaseContext db = new MydatabaseContext())
             {
-                User user = new User()
+                if (name != null && login != null && password != null)
                 {
-                    UserName = name,
-                    UserLogin = login,
-                    UserPassword = password,
-                    UserType = (int)i
-                };
-                db.Add(user);
-                db.SaveChanges();
+                    User user = new User()
+                    {
+                        UserName = name,
+                        UserLogin = login,
+                        UserPassword = password,
+                        UserType = (int)i
+                    };
+                    db.Add(user);
+                    db.SaveChanges();
 
-                new Registration().Show();
-                Close();
-            }
-            else
-            {
-                Mess.Text = "Введите все данные";
+                    new Registration().Show();
+                    Close();
+                }
+                else
+                {
+                    Mess.Text = "Введите все данные";
+                }
             }
         }
         catch 

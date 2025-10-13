@@ -52,3 +52,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Functions/AddClient.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Functions/AddDiagnosis.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/VivoBook 15X/Desktop/Производственная практика 2025/practice2025/practice2025/Functions/AddHistory.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

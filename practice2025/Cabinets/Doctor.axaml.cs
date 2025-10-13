@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Avalonia.Media;
 using Microsoft.EntityFrameworkCore;
 using practice2025.Entry;
 using practice2025.Models;
@@ -84,6 +85,7 @@ public partial class Doctor : Window
                     }
 
                     db.SaveChanges();
+                    Mes.Foreground = Brushes.Green;
                     Mes.Text = "Изменения сохранены успешно!";
 
                     //ListClients.ItemsSource = AllD((groups.SelectedItem as Group)!.GroupId);
@@ -93,6 +95,7 @@ public partial class Doctor : Window
         }
         catch (Exception ex)
         {
+            Mes.Foreground = Brushes.Red;
             Mes.Text = $"Ошибка сохранения: {ex.Message}";
         }
     }
