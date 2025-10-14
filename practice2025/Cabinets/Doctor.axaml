@@ -37,9 +37,7 @@
 					<DataTemplate x:DataType="vm:patient_turnoutDTO">
 						<StackPanel>
 							<ScrollViewer>
-
 							<StackPanel Orientation="Horizontal">
-
 								<StackPanel Width="100">
 									<TextBlock Text="Дата"/>
 									<TextBlock Text="{Binding HistoryDate}"/>
@@ -60,13 +58,7 @@
 									<TextBlock Text="Диагноз"/>
 									<TextBlock Text="{Binding Diagnosis}" TextWrapping="Wrap"/>
 								</StackPanel>
-								<TextBlock Text=" "/>
-								<CheckBox
-										Margin="20,0,0,0"
-										VerticalAlignment="Center"
-										IsChecked="{Binding IsPresent, Mode=TwoWay}"/>
 							</StackPanel>
-
 							</ScrollViewer>
 						</StackPanel>
 					</DataTemplate>
