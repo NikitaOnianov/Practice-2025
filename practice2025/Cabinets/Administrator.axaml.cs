@@ -44,9 +44,4 @@ public partial class Administrator : Window
     {
 
     }
-
-    private void heir(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-    {
-
-    }
 }

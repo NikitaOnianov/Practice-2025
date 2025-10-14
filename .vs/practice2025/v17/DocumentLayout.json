@@ -1,25 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Practice-2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\cabinets\\chief_medical_officer.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\chief_medical_officer.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\chief_medical_officer.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\chief_medical_officer.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\chief_medical_officer.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\cabinets\\chief_medical_officer.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\administrator.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\administrator.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\administrator.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\administrator.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\doctor.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\doctor.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\doctor.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\doctor.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\functions\\addhistory.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\functions\\addhistory.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\functions\\adddiagnosis.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\functions\\adddiagnosis.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\functions\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\functions\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\entry\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\entry\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\userwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\userwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\entry\\registration.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\entry\\registration.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\chief_medical_officer.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\chief_medical_officer.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\cabinets\\doctor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\cabinets\\doctor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\cabinets\\doctor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\entry\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\entry\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\entry\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\vivobook 15x\\desktop\\\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|c:\\users\\user\\desktop\\practice-2025\\practice2025\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8E604A3-C202-4661-9FB0-58C1EC8ABD08}|practice2025\\practice2025.csproj|solutionrelative:practice2025\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,30 +74,166 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Doctor.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Doctor.axaml.cs",
+              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Doctor.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Doctor.axaml.cs",
+              "RelativeToolTip": "practice2025\\Cabinets\\Doctor.axaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T17:17:57.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddClient.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Functions\\AddClient.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Functions\\AddClient.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Functions\\AddClient.axaml",
+              "RelativeToolTip": "practice2025\\Functions\\AddClient.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:12:14.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddHistory.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Functions\\AddHistory.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Functions\\AddHistory.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Functions\\AddHistory.axaml",
+              "RelativeToolTip": "practice2025\\Functions\\AddHistory.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:11:11.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddDiagnosis.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Functions\\AddDiagnosis.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Functions\\AddDiagnosis.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Functions\\AddDiagnosis.axaml",
+              "RelativeToolTip": "practice2025\\Functions\\AddDiagnosis.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:11:07.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Registration.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Entry\\Registration.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Entry\\Registration.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Entry\\Registration.axaml",
+              "RelativeToolTip": "practice2025\\Entry\\Registration.axaml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:11:01.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Entry\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Entry\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Entry\\MainWindow.axaml",
+              "RelativeToolTip": "practice2025\\Entry\\MainWindow.axaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:10:56.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\UserWindow.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Cabinets\\UserWindow.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\UserWindow.axaml",
+              "RelativeToolTip": "practice2025\\Cabinets\\UserWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:10:16.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Doctor.axaml",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Doctor.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Doctor.axaml",
               "RelativeDocumentMoniker": "practice2025\\Cabinets\\Doctor.axaml",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Doctor.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Doctor.axaml",
               "RelativeToolTip": "practice2025\\Cabinets\\Doctor.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T02:08:31.241Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:10:14.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Administrator.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Administrator.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Administrator.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Administrator.axaml",
+              "RelativeToolTip": "practice2025\\Cabinets\\Administrator.axaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:09:21.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chief_Medical_Officer.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
+              "RelativeToolTip": "practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAvwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T17:09:14.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Administrator.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Administrator.axaml.cs",
+              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Administrator.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Administrator.axaml.cs",
+              "RelativeToolTip": "practice2025\\Cabinets\\Administrator.axaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T16:38:50.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Doctor.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Doctor.axaml",
+              "RelativeDocumentMoniker": "practice2025\\Cabinets\\Doctor.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Doctor.axaml",
+              "RelativeToolTip": "practice2025\\Cabinets\\Doctor.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T02:08:31.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Entry\\MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Entry\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "practice2025\\Entry\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Entry\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Entry\\MainWindow.axaml.cs",
               "RelativeToolTip": "practice2025\\Entry\\MainWindow.axaml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -61,11 +241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Models\\UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Models\\UserDTO.cs",
               "RelativeDocumentMoniker": "practice2025\\Models\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Models\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Models\\UserDTO.cs",
               "RelativeToolTip": "practice2025\\Models\\UserDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,28 +253,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Chief_Medical_Officer.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml.cs",
               "RelativeDocumentMoniker": "practice2025\\Cabinets\\Chief_Medical_Officer.axaml.cs",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml.cs",
               "RelativeToolTip": "practice2025\\Cabinets\\Chief_Medical_Officer.axaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwG0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T00:54:49.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Chief_Medical_Officer.axaml",
-              "DocumentMoniker": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
               "RelativeDocumentMoniker": "practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
-              "ToolTip": "C:\\Users\\VivoBook 15X\\Desktop\\\u041F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 2025\\practice2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Practice-2025\\practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
               "RelativeToolTip": "practice2025\\Cabinets\\Chief_Medical_Officer.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-14T00:54:47.469Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-14T00:54:47.469Z"
             }
           ]
         }

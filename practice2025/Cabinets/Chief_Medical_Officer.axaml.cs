@@ -62,18 +62,54 @@ public partial class Chief_Medical_Officer : Window
         {
             using (MydatabaseContext db = new MydatabaseContext())
             {
-                UserDTO UserDTO = ListUsers.SelectedItem as UserDTO;
-                User user = db.Users.Where(i => i.UserId == UserDTO.UserId).First();
-                db.Users.Remove(user);
-                userDTOs.Remove(UserDTO);
+                try
+                {
+                    UserDTO userDTO = ListUsers.SelectedItem as UserDTO;
+                    if (userDTO != null)
+                    {
+                        User user = db.Users.FirstOrDefault(i => i.UserId == userDTO.UserId);
+
+                        if (user != null)
+                        {
+                            db.Users.Remove(user);
+                            db.SaveChanges();
+                            userDTOs.Remove(userDTO);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Ошибка при удалении пользователя: {ex.Message}");
+                }
             }
         }
     }
 
-    private void heir(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void removeClient(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
+        if (ListClients.SelectedItem != null)
+        {
+            using (MydatabaseContext db = new MydatabaseContext())
+            {
+                try
+                {
+                    Client client = ListClients.SelectedItem as Client;
+                    if (client != null)
+                    {
+                        db.Clients.Remove(client);
+                        db.SaveChanges();
 
+                        ListClients.ItemsSource = new ObservableCollection<Client>(db.Clients);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Ошибка при удалении клиента: {ex.Message}");
+                }
+            }
+        }
     }
+
 
     private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
