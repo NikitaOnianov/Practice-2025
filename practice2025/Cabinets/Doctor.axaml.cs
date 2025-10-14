@@ -44,6 +44,7 @@ public partial class Doctor : Window
            .Include(i => i.HistoryDiagnosisNavigation)
            .Include(i => i.HistoryClientNavigation)
            .Where(i => i.HistoryDiagnosisNavigation.DiagnosisMedicalDepartmentNavigation.MedicalDepartmentId == id)
+           .Where(i => i.HistoryDate == DateOnly.FromDateTime(DateTime.Now))
            .AsEnumerable() // Переключаем на клиентскую сторону для сложных вычислений
            .OrderBy(i => i.HistoryDate.ToDateTime(i.HistoryTime))
            .Select(i => new patient_turnoutDTO

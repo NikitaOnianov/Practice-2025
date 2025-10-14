@@ -31,7 +31,7 @@ public partial class Chief_Medical_Officer : Window
 
     private void addClient(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-
+        
     }
 
     private void DelClient(object? sender, Avalonia.Interactivity.RoutedEventArgs e)

@@ -1,9 +1,11 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Microsoft.EntityFrameworkCore;
 using practice2025.Entry;
 using practice2025.Functions;
 using practice2025.Models;
 using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace practice2025.Cabinets
@@ -20,6 +22,7 @@ namespace practice2025.Cabinets
         {
             User = user;
             InitializeUserData();
+            ListClients.ItemsSource = Allpatient();
         }
 
         private void InitializeUserData()
@@ -31,6 +34,27 @@ namespace practice2025.Cabinets
             }
         }
 
+        ObservableCollection<patient_turnoutDTO> Allpatient()
+        {
+            using (MydatabaseContext db = new MydatabaseContext())
+            {
+                var a = db.Histories
+               .Include(i => i.HistoryDiagnosisNavigation)
+               .Include(i => i.HistoryClientNavigation)
+               .Where(i => i.HistoryDate == DateOnly.FromDateTime(DateTime.Now))
+               .AsEnumerable() // Переключаем на клиентскую сторону для сложных вычислений
+               .OrderByDescending(i => i.HistoryDate.ToDateTime(i.HistoryTime))
+               .Select(i => new patient_turnoutDTO
+               {
+                   HistoryDate = i.HistoryDate,
+                   HistoryTime = i.HistoryTime,
+                   Client = i.HistoryClientNavigation.ClientSurname + " " + i.HistoryClientNavigation.ClientName + " " + i.HistoryClientNavigation.ClientPatronymic,
+                   Diagnosis = i.HistoryDiagnosisNavigation.DiagnosisName,
+                   HistoryClient = i.HistoryClient,
+               }).ToList();
+                return new ObservableCollection<patient_turnoutDTO>(a);
+            }
+        }
 
         private void CloseAndReturnToMain()
         {
@@ -46,6 +70,16 @@ namespace practice2025.Cabinets
         private void Button_Click(object? sender, RoutedEventArgs e)
         {
             new AddHistory().Show();
+        }
+
+        private void Button_Click_1(object? sender, RoutedEventArgs e)
+        {
+            ListClients.ItemsSource = Allpatient();
+        }
+
+        private void Button_Click_2(object? sender, RoutedEventArgs e)
+        {
+            new AddClient().Show();
         }
     }
 }
