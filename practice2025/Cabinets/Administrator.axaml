@@ -2,31 +2,104 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="350"
         x:Class="practice2025.Cabinets.Administrator"
         Title="Администратор"
-		Icon="avares://practice2025/Assets/logo.png">
-	<StackPanel HorizontalAlignment="Center" Spacing="15">
-		<Border CornerRadius="25" Background="Red" Padding="10" Width="600">
-			<StackPanel >
-				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
-					<TextBlock Text="Ваше имя"/>
-					<TextBlock Name="Username"/>
-				</StackPanel>
-				<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
-					<TextBlock Text="Ваша должность"/>
-					<TextBlock Name="Usertype"/>
-				</StackPanel>
-			</StackPanel>
-		</Border>
-		<StackPanel HorizontalAlignment="Center">
-			<Button Content="Добавить пациента" Click="addClient" Background="Green"/>
-			<Button Content="Выйти" Width="100" Click="Exit" Background="Yellow"/>
-			<Button Content="Удалить пациента" Click="DelClient" Background="Red"/>
-			<Button Content="Удалить сотрудника" Click="DelUser" Background="Red"/>
-		</StackPanel>
-		
+        Icon="avares://practice2025/Assets/logo.png"
+        xmlns:vm="using:practice2025.Models">
 
-		
-	</StackPanel>
+	<ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+		<StackPanel Margin="10">
+			<Border CornerRadius="25" Background="Red" Padding="10" Width="600" HorizontalAlignment="Left">
+				<StackPanel>
+					<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+						<TextBlock Text="Ваше имя"/>
+						<TextBlock Name="Username"/>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+						<TextBlock Text="Ваша должность"/>
+						<TextBlock Name="Usertype"/>
+					</StackPanel>
+				</StackPanel>
+			</Border>
+
+			<Button Content="Обновить список пациентов" Click="Button_Click" Margin="0,10,0,10"/>
+			<TextBlock Text="Список пациентов"/>
+			<Border Background="Red" CornerRadius="10" Padding="20" Margin="0,10" MaxWidth="700" MaxHeight="300">
+				<ListBox Name="ListClients" ScrollViewer.VerticalScrollBarVisibility="Auto">
+					<ListBox.ItemTemplate>
+						<DataTemplate x:DataType="vm:Client">
+							<StackPanel Margin="5">
+								<StackPanel Orientation="Horizontal" Spacing="15">
+									<StackPanel Width="100">
+										<TextBlock Text="ФИО" FontWeight="Bold"/>
+										<TextBlock Text="{Binding ClientName}"/>
+									</StackPanel>
+									<StackPanel Width="100">
+										<TextBlock Text="Дата" FontWeight="Bold"/>
+										<TextBlock Text="{Binding ClientBirthday}"/>
+									</StackPanel>
+									<StackPanel Width="100">
+										<TextBlock Text="СНИЛС" FontWeight="Bold"/>
+										<TextBlock Text="{Binding ClientSnils}"/>
+									</StackPanel>
+									<StackPanel Width="100">
+										<TextBlock Text="Паспорт" FontWeight="Bold"/>
+										<TextBlock Text="{Binding ClientPassport}"/>
+									</StackPanel>
+									<StackPanel Width="100">
+										<TextBlock Text="Полис" FontWeight="Bold"/>
+										<TextBlock Text="{Binding ClientPolis}"/>
+									</StackPanel>
+								</StackPanel>
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</Border>
+
+			<StackPanel HorizontalAlignment="Center" Margin="0,20,0,0">
+				<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+					<Button Content="Добавить пациента" Click="addClient" Background="Green" Margin="0,0,10,0"/>
+					<Button Content="Удалить пациента" Click="removeClient" Background="Red"/>
+				</StackPanel>
+
+				<TextBlock Text="Список сотрудников"/>
+
+				<Border Background="Red" CornerRadius="10" Padding="20" Margin="0,10" MaxWidth="700" MaxHeight="300">
+					<ListBox Name="ListUsers" ScrollViewer.VerticalScrollBarVisibility="Auto">
+						<ListBox.ItemTemplate>
+							<DataTemplate x:DataType="vm:UserDTO">
+								<Grid Margin="5">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="100"/>
+										<ColumnDefinition Width="100"/>
+									</Grid.ColumnDefinitions>
+
+									<StackPanel Grid.Column="0">
+										<TextBlock Text="ФИО" FontWeight="Bold"/>
+										<TextBlock Text="{Binding UserName}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/>
+									</StackPanel>
+
+									<StackPanel Grid.Column="1" HorizontalAlignment="Center">
+										<TextBlock Text="Логин" FontWeight="Bold" HorizontalAlignment="Center"/>
+										<TextBlock Text="{Binding UserLogin}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" HorizontalAlignment="Center"/>
+									</StackPanel>
+
+									<StackPanel Grid.Column="2">
+										<TextBlock Text="Должность" FontWeight="Bold"/>
+										<TextBlock Text="{Binding UserType}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/>
+									</StackPanel>
+								</Grid>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+				</Border>
+
+				<Button Content="Удалить сотрудника" Click="DelUser" Background="Red" Margin="0,10,0,5"/>
+				<Button Content="Выйти" Width="100" Click="Exit" Background="Yellow" Margin="0,5,0,10"/>
+			</StackPanel>
+		</StackPanel>
+	</ScrollViewer>
 </Window>
