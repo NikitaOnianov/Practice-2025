@@ -41,7 +41,7 @@ namespace practice2025.Cabinets
                 var a = db.Histories
                .Include(i => i.HistoryDiagnosisNavigation)
                .Include(i => i.HistoryClientNavigation)
-               .Where(i => i.HistoryDate == DateOnly.FromDateTime(DateTime.Now))
+               //.Where(i => i.HistoryDate == DateOnly.FromDateTime(DateTime.Now))
                .AsEnumerable() // Переключаем на клиентскую сторону для сложных вычислений
                .OrderByDescending(i => i.HistoryDate.ToDateTime(i.HistoryTime))
                .Select(i => new patient_turnoutDTO

@@ -58,6 +58,11 @@
 									<TextBlock Text="Диагноз"/>
 									<TextBlock Text="{Binding Diagnosis}" TextWrapping="Wrap"/>
 								</StackPanel>
+								<CheckBox
+									 Content="Обслуживание "
+										Margin="20,0,0,0"
+										VerticalAlignment="Center"
+										IsChecked="{Binding IsPresent, Mode=TwoWay}"/>
 							</StackPanel>
 							</ScrollViewer>
 						</StackPanel>
