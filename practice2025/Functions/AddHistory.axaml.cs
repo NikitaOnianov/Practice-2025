@@ -39,17 +39,33 @@ public partial class AddHistory : Window
     {
         try
         {
-            using (MydatabaseContext db = new MydatabaseContext())
+            if (clients.SelectedItem  != null)
             {
-                History history = new History()
+                if (diagnosis.SelectedItem != null)
                 {
-                    HistoryDate = DateOnly.FromDateTime(DateTime.Now),
-                    HistoryTime = TimeOnly.FromDateTime(DateTime.Now),
-                    HistoryClient = (clients.SelectedItem as Client).ClientId,
-                    HistoryDiagnosis = (diagnosis.SelectedItem as Diagnosis).DiagnosisId
-                };
-                db.Add(history);
-                db.SaveChanges();
+                    using (MydatabaseContext db = new MydatabaseContext())
+                    {
+                        History history = new History()
+                        {
+                            HistoryDate = DateOnly.FromDateTime(DateTime.Now),
+                            HistoryTime = TimeOnly.FromDateTime(DateTime.Now),
+                            HistoryClient = (clients.SelectedItem as Client).ClientId,
+                            HistoryDiagnosis = (diagnosis.SelectedItem as Diagnosis).DiagnosisId
+                        };
+                        db.Add(history);
+                        db.SaveChanges();
+                    }
+                }
+                else
+                {
+                    Mess.Foreground = Brushes.Red;
+                    Mess.Text = "Выберите диагноз";
+                }
+            }
+            else
+            {
+                Mess.Foreground = Brushes.Red;
+                Mess.Text = "Выберите пациента";
             }
         }
         catch (Exception ex)

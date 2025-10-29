@@ -42,9 +42,9 @@ public partial class MainWindow : Window
                     switch (id)
                     {
                         case 1: new Administrator(user).Show(); Close(this); break;
-                        case 2 or 55: new Chief_Medical_Officer(user).Show(); Close(this); break;
-                        case 62: new UserWindow(user).Show(); Close(this); break;
-                        case int n when (n >= 35 && n <= 44): new Doctor(user).Show(); Close(this); break;
+                        case 2 or 33: new Chief_Medical_Officer(user).Show(); Close(this); break;
+                        case 40: new UserWindow(user).Show(); Close(this); break;
+                        case int n when (n >= 3 && n <= 32): new Doctor(user).Show(); Close(this); break;
                         default: break;
                     }
                 }

@@ -15,28 +15,33 @@ public partial class Registration : Window
         InitializeComponent();
         using (MydatabaseContext db = new MydatabaseContext())
         {
-            ObservableCollection<UsersType>? type = null;
+            ObservableCollection<UsersType>? type = null; // Создаём пустой список
+
+
+            // берём все должности, но если администратор занят, то без него.
             ObservableCollection<User>? users = new ObservableCollection<User>(
-                db.Users.Where(it => it.UserType == 2)
+                db.Users.Where(it => it.UserType == 1)
                 );
             if (users.Count != 0)
             {
-                type = new ObservableCollection<UsersType>(db.UsersTypes.Where(it => it.UserTypeId != 2));
+                type = new ObservableCollection<UsersType>(db.UsersTypes.Where(it => it.UserTypeId != 1));
             }
             else
             {
                 type = new ObservableCollection<UsersType>(db.UsersTypes);
             }
+
+            // есди главный врач уже есть, то убираем его должность из списка.
             ObservableCollection<User>? users2 = new ObservableCollection<User>(
-                db.Users.Where(it => it.UserType == 3)
+                db.Users.Where(it => it.UserType == 2)
                 );
             if (users2.Count != 0)
             {
-                type = new ObservableCollection<UsersType>(type.Where(it => it.UserTypeId != 3));
+                type = new ObservableCollection<UsersType>(type.Where(it => it.UserTypeId != 2));
             }
 
             ListPosition.ItemsSource = type; // получаем итоговый список должностей
-            ListPosition.SelectedIndex = 0;
+            ListPosition.SelectedIndex = 0;// задаём должность по умолчанию
         }
     }
 
@@ -69,7 +74,7 @@ public partial class Registration : Window
                     db.Add(user);
                     db.SaveChanges();
 
-                    new Registration().Show();
+                    new MainWindow().Show();
                     Close();
                 }
                 else
