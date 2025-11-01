@@ -52,7 +52,7 @@ public partial class AddClient : Window
                 ClientPatronymic = ClientPatronymicBox.Text.Trim(),
                 ClientSnils = ClientSnilsBox.Text.Trim(),
                 ClientPassport = ClientPassportBox.Text.Trim(),
-                ClientBirthday = DateOnly.Parse(ClientBirthday.SelectedDate.Value.Date.ToString()),
+                ClientBirthday = DateOnly.Parse(ClientBirthday.SelectedDate.Value.ToString("yyyy-MM-dd")),
                 ClientPolis = ClientPolisBox.Text.Trim(),
                 ClientIsMan = gender
             };
@@ -85,10 +85,13 @@ public partial class AddClient : Window
     private void CorrectInput()
     {
 
-        if (ClientPassportBox.Text.Length != 10 || !ClientPassportBox.Text.All(char.IsDigit))
+        string cleanedPassport = ClientPassportBox.Text.Replace(" ", "");
+
+        if (cleanedPassport.Length != 10 || !cleanedPassport.All(char.IsDigit))
         {
-            throw new ArgumentException("Паспорт должен содержать ровно 10 цифр");
+            throw new ArgumentException("Паспорт должен содержать ровно 10 цифр (допускается пробел-разделитель, например: 4510 456789)");
         }
+
         if (ClientPolisBox.Text.Length != 16 || !ClientPolisBox.Text.All(char.IsDigit))
         {
             throw new ArgumentException("Полюс должен содержать ровно 16 цифр");
