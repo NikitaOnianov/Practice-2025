@@ -10,6 +10,10 @@
 
     <DockPanel>
         <StackPanel Margin="10" Spacing="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="search" Width="300" Watermark="ПОИСК ПАЦИЕНТА" Text=""/>
+                <Button  Content="Найти" Background="Yellow" Foreground="Black" Click="Button_Click_1"/>
+            </StackPanel>
             <TextBlock Text="Выберите пациента" FontSize="14"/>
             <ComboBox Name="clients" Width="500">
                 <ComboBox.ItemTemplate>
